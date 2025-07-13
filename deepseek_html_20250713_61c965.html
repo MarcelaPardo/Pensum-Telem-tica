@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pensum Violín - UCLA</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🎻 Pensum Violín - UCLA</h1>
+  <p>Haz clic en una materia para ver detalles. <strong>Doble clic</strong> para marcarla como completada.</p>
+  
+  <div class="mermaid" id="mermaid-diagram">
+    flowchart TD
+      %% Semestre I
+      S1["<b>Semestre I</b>"] --> IP1["Instrumento Principal I<br>3h/sem • 48h total"]
+      S1 --> EA1["Entrenamiento Auditivo I<br>4h/sem • 64h total"]
+      S1 --> PC1["Piano Complementario I<br>3h/sem • 48h total"]
+      S1 --> LC["Lenguaje y Comunicación<br>2h/sem • 32h total"]
+      S1 --> ABP["Aprendizaje Basado en Procesos<br>3h/sem • 48h total"]
+      S1 --> AD1["Autodesarrollo I<br>2h/sem • 32h total"]
+
+      %% Semestre II
+      S2["<b>Semestre II</b>"] --> IP2["Instrumento Principal II<br>3h/sem • 48h total"]
+      IP1 --> IP2
+      S2 --> EA2["Entrenamiento Auditivo II<br>4h/sem • 64h total"]
+      EA1 --> EA2
+      S2 --> PC2["Piano Complementario II<br>3h/sem • 48h total"]
+      PC1 --> PC2
+      S2 --> ARM1["Armonía I<br>4h/sem • 64h total"]
+      S2 --> AD2["Autodesarrollo II<br>2h/sem • 32h total"]
+      AD1 --> AD2
+      S2 --> OI["Orientación Integral<br>2h/sem • 32h total"]
+
+      %% Semestre III
+      S3["<b>Semestre III</b>"] --> IP3["Instrumento Principal III<br>3h/sem • 48h total"]
+      IP2 --> IP3
+      S3 --> ARM2["Armonía II<br>4h/sem • 64h total"]
+      ARM1 --> ARM2
+      S3 --> IM["Informática Musical<br>3h/sem • 48h total"]
+      S3 --> HM1["Historia de la Música I<br>4h/sem • 64h total"]
+      S3 --> MI["Metodología de la Investigación<br>3h/sem • 48h total"]
+      S3 --> IDI["Idioma<br>2h/sem • 32h total"]
+
+      %% Semestre IV
+      S4["<b>Semestre IV</b>"] --> IP4["Instrumento Principal IV<br>3h/sem • 48h total"]
+      IP3 --> IP4
+      S4 --> CP1["Contrapunto I<br>3h/sem • 48h total"]
+      S4 --> AFM1["Análisis y Formas Musicales I<br>3h/sem • 48h total"]
+      S4 --> HM2["Historia de la Música II<br>4h/sem • 64h total"]
+      HM1 --> HM2
+      S4 --> PE["Psicología de la Educación<br>3h/sem • 48h total"]
+      S4 --> EL1["Electiva I<br>3h/sem • 48h total"]
+
+      %% Semestre V
+      S5["<b>Semestre V</b>"] --> IP5["Instrumento Principal V<br>3h/sem • 48h total"]
+      IP4 --> IP5
+      S5 --> MC1["Música de Cámara I<br>2h/sem • 32h total"]
+      S5 --> CP2["Contrapunto II<br>3h/sem • 48h total"]
+      CP1 --> CP2
+      S5 --> AFM2["Análisis y Formas Musicales II<br>3h/sem • 48h total"]
+      AFM1 --> AFM2
+      S5 --> MV["Música Venezolana<br>4h/sem • 64h total"]
+      S5 --> PO1["Práctica Orquestal I<br>8h/sem • 128h total"]
+
+      %% Semestre VI
+      S6["<b>Semestre VI</b>"] --> IP6["Instrumento Principal VI<br>3h/sem • 48h total"]
+      IP5 --> IP6
+      S6 --> MC2["Música de Cámara II<br>2h/sem • 32h total"]
+      MC1 --> MC2
+      S6 --> ML["Música Latinoamericana<br>4h/sem • 64h total"]
+      S6 --> PO2["Práctica Orquestal II<br>8h/sem • 128h total"]
+      PO1 --> PO2
+      S6 --> EST["Estética<br>2h/sem • 32h total"]
+      S6 --> EL2["Electiva II<br>3h/sem • 48h total"]
+
+      %% Semestre VII
+      S7["<b>Semestre VII</b>"] --> IP7["Instrumento Principal VII<br>3h/sem • 48h total"]
+      IP6 --> IP7
+      S7 --> MC3["Música de Cámara III<br>2h/sem • 32h total"]
+      MC2 --> MC3
+      S7 --> DG["Didáctica Globalizadora<br>3h/sem • 48h total"]
+      S7 --> PI["Planificación de la Instrucción<br>3h/sem • 48h total"]
+      S7 --> PO3["Práctica Orquestal III<br>8h/sem • 128h total"]
+      PO2 --> PO3
+      S7 --> OL["Orientación Laboral<br>2h/sem • 32h total"]
+
+      %% Semestre VIII
+      S8["<b>Semestre VIII</b>"] --> CG["Concierto de Grado<br>6h/sem • 96h total"]
+      IP7 --> CG
+      S8 --> TC["Trabajo Comunitario<br>8h/sem • 128h total"]
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
