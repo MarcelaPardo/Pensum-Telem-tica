@@ -1,0 +1,51 @@
+body {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  color: #8e44ad;
+  text-align: center;
+}
+
+.mermaid {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los nodos */
+.mermaid .node rect {
+  fill: #9b59b6;
+  stroke: #8e44ad;
+  rx: 5px;
+  ry: 5px;
+  transition: all 0.3s;
+}
+
+.mermaid .node text {
+  fill: white;
+  font-size: 12px;
+}
+
+/* Nodos tachados (completados) */
+.mermaid .node.completed rect {
+  fill: #27ae60;
+  stroke: #2ecc71;
+  text-decoration: line-through;
+}
+
+.mermaid .node.completed text {
+  text-decoration: line-through;
+}
+
+/* Flechas */
+.mermaid .edgePath path {
+  stroke: #7f8c8d;
+  stroke-width: 2px;
+}
